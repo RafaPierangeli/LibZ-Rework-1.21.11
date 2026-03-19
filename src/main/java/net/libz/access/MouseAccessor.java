@@ -6,6 +6,6 @@ import net.fabricmc.api.Environment;
 @Environment(EnvType.CLIENT)
 public interface MouseAccessor {
 
-    public void setMousePosition(int x, int y);
+    public void libZ_Rework_1_21_11$setMousePosition(int x, int y);
 
 }

@@ -22,9 +22,9 @@ public class MouseMixin implements MouseAccessor {
     private MinecraftClient client;
 
     @Override
-    public void setMousePosition(int xPos, int yPos) {
+    public void libZ_Rework_1_21_11$setMousePosition(int xPos, int yPos) {
         this.x = xPos;
         this.y = yPos;
-        InputUtil.setCursorParameters(this.client.getWindow().getHandle(), 212993, this.x, this.y);
+        InputUtil.setCursorParameters(this.client.getWindow(), 212993, this.x, this.y);
     }
 }

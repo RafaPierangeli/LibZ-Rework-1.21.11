@@ -1,7 +1,5 @@
 package net.libz.network;
 
-import java.util.Iterator;
-
 import blue.endless.jankson.Jankson;
 import blue.endless.jankson.JsonObject;
 import blue.endless.jankson.JsonElement;
@@ -69,7 +67,7 @@ public class LibzClientPacket {
             int mouseX = payload.mouseX();
             int mouseY = payload.mouseY();
             context.client().execute(() -> {
-                ((MouseAccessor) context.client().mouse).setMousePosition(mouseX, mouseY);
+                ((MouseAccessor) context.client().mouse).libZ_Rework_1_21_11$setMousePosition(mouseX, mouseY);
             });
         });
     }

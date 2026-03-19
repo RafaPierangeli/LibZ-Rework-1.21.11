@@ -11,14 +11,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-/**
- * InventoryTab class to be extended to create a new tab for a screen.
- * 
- * <p>
- * Register with the TabRegistry.
- *
- * @version 1.0
- */
+
 @Environment(EnvType.CLIENT)
 public class InventoryTab {
 
@@ -66,7 +59,7 @@ public class InventoryTab {
     }
 
     public void onClick(MinecraftClient client) {
-        client.getSoundManager().play(PositionedSoundInstance.master(SoundEvents.UI_BUTTON_CLICK, 1.0F));
+        client.getSoundManager().play(PositionedSoundInstance.ui(SoundEvents.UI_BUTTON_CLICK, 1.0F));
     }
 
     public boolean canClick(Class<?> screenClass, MinecraftClient client) {
