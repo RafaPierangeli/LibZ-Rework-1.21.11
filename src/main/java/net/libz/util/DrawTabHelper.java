@@ -60,7 +60,7 @@
                                 textureX -= 24;
                             }
 
-                            context.drawTexture(RenderPipelines.GUI_TEXTURED,LibzClient.tabTexture, xPos, isSelectedTab ? y - 23 : y - 21, textureX, 0, 24, isSelectedTab ? 27 : isFirstTab ? 25 : 21,14,14);
+                            context.drawTexture(RenderPipelines.GUI_TEXTURED,LibzClient.tabTexture, xPos, isSelectedTab ? y - 23 : y - 21, textureX, 0, 24, isSelectedTab ? 27 : isFirstTab ? 25 : 21,256,256);
                             if (inventoryTab.getTexture() != null) {
                                 context.drawTexture(RenderPipelines.GUI_TEXTURED,inventoryTab.getTexture(), xPos + 5, y - 16, 0, 0, 14, 14, 14, 14);
                             } else if (inventoryTab.getItemStack(client) != null) {
